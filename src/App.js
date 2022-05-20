@@ -4,12 +4,20 @@ import NavBar from './components/NavBar/NavBar';
 
 //import {dateFormat, dateFormat2} from './components/NavBar/NavBar'
 
+import CardList from './components/CardList/CardList';
+import SnackBar from './components/SnackBar/SnackBar';
+
 function App() {
   return (
     //JSX
     <div className="App">
       <NavBar />
-      Contenido de la app
+      <div className='general-container'>
+        <CardList></CardList>
+      </div>
+      <SnackBar>
+        <p>Se agrego el prod 1</p>
+      </SnackBar>
     </div>
   );
 }
